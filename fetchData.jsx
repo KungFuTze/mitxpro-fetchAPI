@@ -91,7 +91,7 @@ const Pagination = ({ items, pageSize, onPageChange }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const pageSize = 10;
     const [{ data, isLoading, isError }, doFetch] = useDataApi(
-      "GET https://api.spacexdata.com/v4/launches/latest/search?query=MIT",
+      "https://api.spacexdata.com/v4/launches/latest",
       {
         hits: [],
       }
